@@ -21,16 +21,17 @@ try:
 except ImportError as e:
     exit()
 
-XFYUN_APPID = "3b30e1c2"
-XFYUN_API_SECRET = "NmJlYWMzMjNjMDgzZGQ5MDg0MTM2OTNl"
-XFYUN_API_KEY = "6bc4241f1cbc55836f31ab7f8e774180"
-XFYUN_HOST_URL = "wss://iat-api.xfyun.cn/v2/iat"
+# 配置科大讯飞 ASR 信息
+XFYUN_APPID = "你的APPID"
+XFYUN_API_SECRET = "你的API_SECRET"
+XFYUN_API_KEY = "你的API_KEY"
 
-BAIDU_API_KEY = "eHAG8a4ndZnFYtqKTi66V0tkGMiZaR7T"
-BAIDU_SECRET_KEY = "ssVztd9Wibr4pWkFNbTbgWF14B3mzGGe"
+# 配置百度文心一言信息
+BAIDU_API_KEY = "你的百度API_KEY"
+BAIDU_SECRET_KEY = "你的百度SECRET_KEY"
 
-DEEPSEEK_API_KEY = "sk-bccaeb028ce147ea8d4ee5b755395753"
-DEEPSEEK_BASE_URL = "https://api.deepseek.com/chat/completions"
+# 配置 DeepSeek 信息
+DEEPSEEK_API_KEY = "你的DeepSeek_API_KEY"
 
 CHUNK = 1024
 FORMAT = pyaudio.paInt16
@@ -693,4 +694,5 @@ if __name__ == "__main__":
     root = tk.Tk()
     app = SmartDiaryApp(root)
     root.protocol("WM_DELETE_WINDOW", app.on_close)
+
     root.mainloop()
