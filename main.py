@@ -32,6 +32,7 @@ BAIDU_SECRET_KEY = "你的百度SECRET_KEY"
 
 # 配置 DeepSeek 信息
 DEEPSEEK_API_KEY = "你的DeepSeek_API_KEY"
+DEEPSEEK_BASE_URL = "https://api.deepseek.com/chat/completions"
 
 CHUNK = 1024
 FORMAT = pyaudio.paInt16
@@ -696,3 +697,4 @@ if __name__ == "__main__":
     root.protocol("WM_DELETE_WINDOW", app.on_close)
 
     root.mainloop()
+
